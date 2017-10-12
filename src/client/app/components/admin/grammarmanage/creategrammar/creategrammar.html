@@ -1,0 +1,57 @@
+<div class="unitmanage">
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Create New Grammar</legend>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="coinspershift">Lesson Id</label>
+                <div class="col-md-2">
+                    <input id="coinspershift" name="coinspershift" type="text" ng-model="vm.grammar.lesson_id" placeholder="Lesson Id" class="form-control input-md">
+
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Grammar Title</label>
+                <div class="col-md-4">
+                    <input id="textinput" name="textinput" type="text" ng-model="vm.grammar.gramTitle" placeholder="Title" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lastname">Content</label>
+                <div class="col-md-4">
+                    <textarea name="lastname" type="text" ng-model="vm.grammar.content" placeholder="Content" class="form-control input-md"></textarea>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lastname">Description</label>
+                <div class="col-md-4">
+                    <textarea name="lastname" type="text" ng-model="vm.grammar.description" placeholder="Discription" class="form-control input-md"></textarea>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lastname">Example</label>
+                <div class="col-md-4">
+                    <textarea name="lastname" type="text" ng-model="vm.grammar.example" placeholder="Example" class="form-control input-md"></textarea>
+
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="button1id"></label>
+                <div class="col-md-8">
+                    <button id="button1id" name="button1id" class="btn btn-success" ng-click="vm.createGram()">Create</button>
+                    <button id="button2id" name="button2id" class="btn btn-danger" ng-class="vm.turn==0?'active':''" ng-click="vm.turnActive(0)">Cancel</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+</div>
